@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RyouTag Lab | クラウド・インフラエンジニア</title>
+    <style>
+        :root {
+            --main-color: #333;
+            --accent-color: #007bff;
+            --bg-color: #f8f9fa;
+        }
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--main-color);
+            margin: 0;
+            background-color: var(--bg-color);
+        }
+        header {
+            background: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        .logo {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        nav {
+            margin-top: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--main-color);
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: var(--accent-color);
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 60px;
+        }
+        h2 {
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+            margin-bottom: 25px;
+        }
+        .service-card, .exp-card, .cert-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+        }
+        .period {
+            display: inline-block;
+            background: #eee;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #fff;
+            border-top: 1px solid #ddd;
+        }
+        .fb-btn {
+            display: inline-block;
+            background: #1877f2;
+            color: #fff;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .fb-btn:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="RyouTag Lab Logo" class="logo">
+    <p>Cloud & Infrastructure Engineering Specialist</p>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="services">
+        <h2>事業内容</h2>
+        <div class="service-card">
+            <h3>クラウド設計・構築</h3>
+            <p>AWS, Google Cloud, Azure を活用したスケーラブルなインフラ設計を提供します。</p>
+        </div>
+        <div class="service-card">
+            <h3>Linux / オープンソース支援</h3>
+            <p>LPIC Level 3保持者として、Linuxサーバー構築からパフォーマンスチューニング、セキュリティ強化まで一貫してサポートします。</p>
+        </div>
+        <div class="service-card">
+            <h3>運用設計・自動化</h3>
+            <p>25年以上の現場経験に基づき、運用しやすく、技術代替が容易なインフラ環境をご提案します。</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>RyouTag Lab について</h2>
+        <p>代表：後藤 良多、1972年3月5日生まれ、千葉県柏市在住。</p>
+        <p>1997年より大手メーカー、金融機関、官公庁のシステム基盤に携わってきました。</p>
+        <p>「運用に配慮したインフラ設計」をモットーに、最新のクラウド技術からレガシーなUNIXシステムまで、お客様のニーズに最適な解を提案します。</p>
+    </section>
+
+    <section id="experience">
+        <h2>職務経歴詳細</h2>
+
+        <div class="exp-card">
+            <span class="period">2025年10月 ～ 2026年1月</span>
+            <h3>物流業 認証システム開発保守</h3>
+            <p>EntraIDへのデータ連携サーバー保守を担当。</p>
+            <p><small>環境: Azure</small></p>
+        </div>
+
+        <div class="exp-card">
+            <span class="period">2025年5月 ～ 2025年9月</span>
+            <h3>決済代行業 クラウドシステム運用設計</h3>
+            <p>AWSシステムの運用設計、構築、運用部隊の創出。ECS/Fargate、AWS Batch、CloudWatch等を使用。</p>
+            <p><small>環境: AWS</small></p>
+        </div>
+
+        <div class="exp-card">
+            <span class="period">2023年1月 ～ 2025年3月</span>
+            <h3>物流業 DXシステム設計</h3>
+            <p>インフラ要件定義、基本設計、PoC構築、セキュリティ対応。Cloud Run、Cloud Monitoring、terraformを使用。</p>
+            <p><small>環境: Google Cloud</small></p>
+        </div>
+
+        <div class="exp-card">
+            <span class="period">2022年7月 ～ 2022年12月</span>
+            <h3>官庁WEBサイト運用保守</h3>
+            <p>インフラ担当として、EC2、CloudFront、WAF、GuardDuty等の運用に従事。</p>
+            <p><small>環境: AWS</small></p>
+        </div>
+
+        <div class="exp-card">
+            <span class="period">2020年1月 ～ 2022年6月</span>
+            <h3>証券取引所 取引システム基盤担当</h3>
+            <p>システム基盤運用、取引システム性能評価、Wikiサイトの構築・管理。</p>
+            <p><small>環境: AWS, Linux</small></p>
+        </div>
+
+        <div class="exp-card">
+            <span class="period">2019年1月 ～ 2019年12月</span>
+            <h3>保険会社 インフラ運用・構築</h3>
+            <p>VMware検証環境構築、本番メンテナンス、CISベンチマーク対応。</p>
+            <p><small>環境: VMware ESXi, Linux</small></p>
+        </div>
+
+        <div class="exp-card">
+            <span class="period">2016年12月 ～ 2018年12月</span>
+            <h3>保険会社 インフラ運用・構築</h3>
+            <p>Barracuda WAF運用改善、WebSphereバージョンアップ、Oracleパッチ対応等。</p>
+            <p><small>環境: Linux, Solaris, WAS, Oracle, Barracuda WAF</small></p>
+        </div>
+
+        <div class="exp-card">
+            <span class="period">2009年1月 ～ 2015年6月</span>
+            <h3>外資系SIベンダー ホスティング・構築・運用</h3>
+            <p>カード系システム更改、製造メーカWebサイト構築、CMSシステム設計・開発。</p>
+            <p><small>環境: AIX, RedHat Linux, 各種アプライアンス</small></p>
+        </div>
+
+        <div class="exp-card">
+            <span class="period">2006年4月 ～ 2008年3月</span>
+            <h3>自動車製造メーカー インフラ運用管理</h3>
+            <p>更改案件の提案・設計、WAS共通標準策定、証券化システム基盤構築。</p>
+        </div>
+
+        <div class="exp-card">
+            <span class="period">1997年3月 ～ 2005年9月</span>
+            <h3>電気機器メーカー ホスティングサービス</h3>
+            <p>監視システム構築・運用、オペレーション管理、Tivoliによる標準化。</p>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2>取得資格</h2>
+        <div class="cert-card">
+            <ul>
+                <li>Python 3 エンジニア認定基礎 (2019年)</li>
+                <li>AWS認定 ソリューションアーキテクト アソシエイト (2018年)</li>
+                <li>LPIC Level 3 Security (2016年)</li>
+                <li>LPIC Level 2 (2011年)</li>
+                <li>ITIL Foundation (2009年)</li>
+                <li>LPIC Level 1 (2007年)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" style="text-align: center;">
+        <h2>お問い合わせ</h2>
+        <p>プロジェクトのご相談や技術支援に関するお問い合わせは、Facebookより受け付けております。</p>
+        <a href="https://www.facebook.com/あなたのプロフィールURL" class="fb-btn" target="_blank">Facebookで連絡する</a>
+    </section>
+</div>
+
+<footer>
+    &copy; 2026 RyouTag Lab. All Rights Reserved.
+</footer>
+
+</body>
+</html>
